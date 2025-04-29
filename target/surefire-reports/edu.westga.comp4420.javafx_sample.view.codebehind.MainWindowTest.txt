@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.904 s - in edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest
