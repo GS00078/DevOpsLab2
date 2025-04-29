@@ -30,7 +30,7 @@ import javafx.scene.control.TextField;
         try {
 <span class="fc" id="L31">            int quantity = Integer.parseInt(quantityText);</span>
 <span class="pc bpc" id="L32" title="1 of 2 branches missed.">            if (quantity &lt;= 0) {</span>
-<span class="nc" id="L33">                this.showError(&quot;Quantity must be a positive number!&quot;);</span>
+<span class="nc" id="L33">                this.showError(&quot;Quantity must be a positive number.&quot;);</span>
 <span class="nc" id="L34">                return;</span>
             }
 
@@ -38,19 +38,19 @@ import javafx.scene.control.TextField;
 <span class="fc" id="L38">            this.itemNameField.clear();</span>
 <span class="fc" id="L39">            this.quantityField.clear();</span>
 <span class="nc" id="L40">        } catch (NumberFormatException e) {</span>
-<span class="nc" id="L41">            this.showError(&quot;Quantity must be a valid number!&quot;);</span>
+<span class="nc" id="L41">            this.showError(&quot;Quantity must be a valid number.&quot;);</span>
 <span class="fc" id="L42">        }</span>
 <span class="fc" id="L43">    }</span>
 
     @FXML
     private void handleRemove(ActionEvent event) {
-<span class="nc" id="L47">        int selectedIndex = this.itemListView.getSelectionModel().getSelectedIndex();</span>
-<span class="nc bnc" id="L48" title="All 2 branches missed.">        if (selectedIndex &gt;= 0) {</span>
-<span class="nc" id="L49">            this.itemListView.getItems().remove(selectedIndex);</span>
+<span class="fc" id="L47">        int selectedIndex = this.itemListView.getSelectionModel().getSelectedIndex();</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if (selectedIndex &gt;= 0) {</span>
+<span class="fc" id="L49">            this.itemListView.getItems().remove(selectedIndex);</span>
         } else {
-<span class="nc" id="L51">            this.showError(&quot;Please select an item to remove!&quot;);</span>
+<span class="fc" id="L51">            this.showError(&quot;Please select an item to remove.&quot;);</span>
         }
-<span class="nc" id="L53">    }</span>
+<span class="fc" id="L53">    }</span>
 
     @FXML
     private void handleUpdate(ActionEvent event) {
@@ -67,7 +67,7 @@ import javafx.scene.control.TextField;
             try {
 <span class="nc" id="L68">                int quantity = Integer.parseInt(quantityText);</span>
 <span class="nc bnc" id="L69" title="All 2 branches missed.">                if (quantity &lt;= 0) {</span>
-<span class="nc" id="L70">                    this.showError(&quot;Quantity must be a positive number!&quot;);</span>
+<span class="nc" id="L70">                    this.showError(&quot;Quantity must be a positive number.&quot;);</span>
 <span class="nc" id="L71">                    return;</span>
                 }
 
@@ -75,10 +75,10 @@ import javafx.scene.control.TextField;
 <span class="nc" id="L75">                this.itemNameField.clear();</span>
 <span class="nc" id="L76">                this.quantityField.clear();</span>
 <span class="nc" id="L77">            } catch (NumberFormatException e) {</span>
-<span class="nc" id="L78">                this.showError(&quot;Quantity must be a valid number!&quot;);</span>
+<span class="nc" id="L78">                this.showError(&quot;Quantity must be a valid number.&quot;);</span>
 <span class="nc" id="L79">            }</span>
 <span class="nc" id="L80">        } else {</span>
-<span class="nc" id="L81">            this.showError(&quot;Please select an item to update!&quot;);</span>
+<span class="nc" id="L81">            this.showError(&quot;Please select an item to update.&quot;);</span>
         }
 <span class="nc" id="L83">    }</span>
 

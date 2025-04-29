@@ -1,8 +1,8 @@
 package edu.westga.comp4420.javafx_sample.view.codebehind;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.testfx.assertions.api.Assertions.assertThat;
 import static org.testfx.util.WaitForAsyncUtils.waitForFxEvents;
+
 import org.junit.jupiter.api.Test;
 import org.testfx.framework.junit5.ApplicationTest;
 import javafx.scene.control.ListView;
@@ -18,6 +18,7 @@ public class MainWindowTest extends ApplicationTest {
     private TextField quantityField;
     private ListView<String> itemListView;
     private Button addButton;
+    private Button removeButton;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -29,6 +30,7 @@ public class MainWindowTest extends ApplicationTest {
         quantityField = lookup("#quantityField").query();
         itemListView = lookup("#itemListView").query();
         addButton = lookup("#addButton").query();
+        removeButton = lookup("#removeButton").query();
     }
 
     @Test
@@ -40,8 +42,8 @@ public class MainWindowTest extends ApplicationTest {
         String expectedItem = "Milk - 2";
         assertEquals(expectedItem, itemListView.getItems().get(0));
     }
-
-	@Test
+	
+		@Test
 	public void testAddInvalidItem() {
 		clickOn(itemNameField).write("");
 		clickOn(quantityField).write("1");
@@ -54,4 +56,25 @@ public class MainWindowTest extends ApplicationTest {
 
 		assertEquals(0, itemListView.getItems().size());
 	}
+
+    @Test
+    public void testRemoveItemWithSelection() {
+        clickOn(itemNameField).write("Apples");
+        clickOn(quantityField).write("5");
+        clickOn(addButton);
+
+        clickOn(itemListView).clickOn("Apples - 5");
+        clickOn(removeButton);
+
+        assertEquals(0, itemListView.getItems().size());
+    }
+
+    @Test
+    public void testRemoveItemWithoutSelection() {
+        clickOn(removeButton);
+        waitForFxEvents();
+
+        boolean alertExists = lookup(".alert").tryQuery().isPresent();
+        assertEquals(true, alertExists, "Expected an error dialog to appear");
+    }
 }
