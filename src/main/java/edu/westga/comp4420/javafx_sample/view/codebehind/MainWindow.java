@@ -30,7 +30,7 @@ public class MainWindow {
         try {
             int quantity = Integer.parseInt(quantityText);
             if (quantity <= 0) {
-                this.showError("Quantity must be a positive number.");
+                this.showError("Quantity must be a positive number!");
                 return;
             }
 
@@ -38,7 +38,7 @@ public class MainWindow {
             this.itemNameField.clear();
             this.quantityField.clear();
         } catch (NumberFormatException e) {
-            this.showError("Quantity must be a valid number.");
+            this.showError("Quantity must be a valid number!");
         }
     }
 
@@ -48,7 +48,7 @@ public class MainWindow {
         if (selectedIndex >= 0) {
             this.itemListView.getItems().remove(selectedIndex);
         } else {
-            this.showError("Please select an item to remove.");
+            this.showError("Please select an item to remove!");
         }
     }
 
@@ -56,29 +56,30 @@ public class MainWindow {
     private void handleUpdate(ActionEvent event) {
         int selectedIndex = this.itemListView.getSelectionModel().getSelectedIndex();
         if (selectedIndex >= 0) {
-            String itemName = this.itemNameField.getText().trim();
             String quantityText = this.quantityField.getText().trim();
 
-            if (itemName.isEmpty()) {
-                this.showError("A valid item name must be provided.");
+            if (quantityText.isEmpty()) {
+                this.showError("A quantity must be provided.");
                 return;
             }
 
             try {
                 int quantity = Integer.parseInt(quantityText);
                 if (quantity <= 0) {
-                    this.showError("Quantity must be a positive number.");
+                    this.showError("Quantity must be a positive number!");
                     return;
                 }
 
+                String existingItem = this.itemListView.getItems().get(selectedIndex);
+                String itemName = existingItem.split(" - ")[0];
+
                 this.itemListView.getItems().set(selectedIndex, itemName + " - " + quantity);
-                this.itemNameField.clear();
                 this.quantityField.clear();
             } catch (NumberFormatException e) {
-                this.showError("Quantity must be a valid number.");
+                this.showError("Quantity must be a valid number!");
             }
         } else {
-            this.showError("Please select an item to update.");
+            this.showError("Please select an item to update!");
         }
     }
 

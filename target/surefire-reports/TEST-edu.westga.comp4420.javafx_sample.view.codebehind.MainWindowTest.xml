@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="12.047" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="47.414" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\LOCAL_~1\Temp\surefire4624400214528545414\surefirebooter15223972718464854456.jar C:\Users\local_gs00078\Temp\surefire4624400214528545414 2025-04-29T19-30-37_827-jvmRun1 surefire50525915811594876tmp surefire_015959075319945528260tmp"/>
+    <property name="sun.java.command" value="C:\Users\LOCAL_~1\Temp\surefire16684132267612264432\surefirebooter8377209184566541876.jar C:\Users\local_gs00078\Temp\surefire16684132267612264432 2025-04-29T23-31-17_792-jvmRun1 surefire14788355379724921354tmp surefire_06526608532684768512tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\gs00078\Desktop\Lab2\Lab2\target\test-classes;C:\Users\gs00078\Desktop\Lab2\Lab2\target\classes;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-controls\21\javafx-controls-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-controls\21\javafx-controls-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-graphics\21\javafx-graphics-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-graphics\21\javafx-graphics-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-base\21\javafx-base-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-base\21\javafx-base-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-fxml\21\javafx-fxml-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-fxml\21\javafx-fxml-21-win.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gs00078\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\gs00078\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\gs00078\.m2\repository\org\testfx\testfx-core\4.0.16-alpha\testfx-core-4.0.16-alpha.jar;C:\Users\gs00078\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gs00078\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\gs00078\.m2\repository\org\testfx\testfx-junit5\4.0.16-alpha\testfx-junit5-4.0.16-alpha.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LOCAL_~1\Temp\surefire4624400214528545414\surefirebooter15223972718464854456.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LOCAL_~1\Temp\surefire16684132267612264432\surefirebooter8377209184566541876.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+7-LTS"/>
@@ -59,8 +59,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAddInvalidItem" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="4.216"/>
-  <testcase name="testAddValidItem" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.576"/>
-  <testcase name="testRemoveItemWithoutSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="0.756"/>
-  <testcase name="testRemoveItemWithSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="4.438"/>
+  <testcase name="testUpdateQuantityWithoutSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="3.797"/>
+  <testcase name="testUpdateQuantityWithNonNumericValue" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.212"/>
+  <testcase name="testAddInvalidItem" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.309"/>
+  <testcase name="testAddItemWithZeroQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.712"/>
+  <testcase name="testAddItemWithNonNumericQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.898"/>
+  <testcase name="testUpdateQuantityWithSelectionAndZeroQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.204"/>
+  <testcase name="testAddValidItem" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.566"/>
+  <testcase name="testAddItemWithNegativeQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.74"/>
+  <testcase name="testRemoveItemWithoutSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="0.701"/>
+  <testcase name="testRemoveItemWithSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="4.312"/>
+  <testcase name="testUpdateQuantityWithSelectionAndNegativeQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.118"/>
+  <testcase name="testUpdateQuantityWithSelectionAndValidQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.002"/>
+  <testcase name="testUpdateQuantityWithEmptyField" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="4.737"/>
 </testsuite>
