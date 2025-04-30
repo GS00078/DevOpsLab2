@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="47.414" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\gs00078\Desktop\Lab2\Lab2\target\test-classes;C:\Users\gs00078\Desktop\Lab2\Lab2\target\classes;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-controls\21\javafx-controls-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-controls\21\javafx-controls-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-graphics\21\javafx-graphics-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-graphics\21\javafx-graphics-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-base\21\javafx-base-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-base\21\javafx-base-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-fxml\21\javafx-fxml-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-fxml\21\javafx-fxml-21-win.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gs00078\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\gs00078\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\gs00078\.m2\repository\org\testfx\testfx-core\4.0.16-alpha\testfx-core-4.0.16-alpha.jar;C:\Users\gs00078\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gs00078\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\gs00078\.m2\repository\org\testfx\testfx-junit5\4.0.16-alpha\testfx-junit5-4.0.16-alpha.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\LOCAL_~1\Temp\surefire16684132267612264432\surefirebooter8377209184566541876.jar C:\Users\local_gs00078\Temp\surefire16684132267612264432 2025-04-29T23-31-17_792-jvmRun1 surefire14788355379724921354tmp surefire_06526608532684768512tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\gs00078\Desktop\Lab2\Lab2\target\test-classes;C:\Users\gs00078\Desktop\Lab2\Lab2\target\classes;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-controls\21\javafx-controls-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-controls\21\javafx-controls-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-graphics\21\javafx-graphics-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-graphics\21\javafx-graphics-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-base\21\javafx-base-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-base\21\javafx-base-21-win.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-fxml\21\javafx-fxml-21.jar;C:\Users\gs00078\.m2\repository\org\openjfx\javafx-fxml\21\javafx-fxml-21-win.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gs00078\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\gs00078\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\gs00078\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\gs00078\.m2\repository\org\testfx\testfx-core\4.0.16-alpha\testfx-core-4.0.16-alpha.jar;C:\Users\gs00078\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\gs00078\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\gs00078\.m2\repository\org\testfx\testfx-junit5\4.0.16-alpha\testfx-junit5-4.0.16-alpha.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\gs00078"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\gs00078\Desktop\Lab2\Lab2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\LOCAL_~1\Temp\surefire16684132267612264432\surefirebooter8377209184566541876.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.4+7-LTS"/>
+    <property name="user.name" value="gs00078"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.4+7"/>
+    <property name="localRepository" value="C:\Users\gs00078\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\LOCAL_~1\Temp\"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.dir" value="C:\Users\gs00078\Desktop\Lab2\Lab2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\gs00078\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\gs00078\bin;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Python312\Scripts;C:\Program Files\Python312;C:\Program Files\Python310\Scripts;C:\Program Files\Python310;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\sqlite;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet;C:\Program Files\Azure Data Studio\bin;C:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\maven\bin;C:\flutter\bin;C:\AndroidSDK\cmdline-tools\latest\bin;C:\Program Files\MongoDB\mongosh-1.6.1-win32-x64\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\nodejs;C:\Program Files\Wolfram Research\WolframScript;C:\Program Files\Git\cmd;C:\Program Files\LINQPad8;C:\Program Files\TortoiseGit\bin;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Redis;C:\Users\gs00078\AppData\Local\Microsoft\WindowsApps;C:\Users\gs00078\AppData\Local\GitHubDesktop\bin;C:\Users\gs00078\.dotnet\tools;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.4+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testUpdateQuantityWithoutSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="3.797"/>
+  <testcase name="testUpdateQuantityWithNonNumericValue" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.212"/>
+  <testcase name="testAddInvalidItem" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.309"/>
+  <testcase name="testAddItemWithZeroQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.712"/>
+  <testcase name="testAddItemWithNonNumericQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.898"/>
+  <testcase name="testUpdateQuantityWithSelectionAndZeroQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.204"/>
+  <testcase name="testAddValidItem" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.566"/>
+  <testcase name="testAddItemWithNegativeQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="2.74"/>
+  <testcase name="testRemoveItemWithoutSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="0.701"/>
+  <testcase name="testRemoveItemWithSelection" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="4.312"/>
+  <testcase name="testUpdateQuantityWithSelectionAndNegativeQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.118"/>
+  <testcase name="testUpdateQuantityWithSelectionAndValidQuantity" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="5.002"/>
+  <testcase name="testUpdateQuantityWithEmptyField" classname="edu.westga.comp4420.javafx_sample.view.codebehind.MainWindowTest" time="4.737"/>
+</testsuite>
